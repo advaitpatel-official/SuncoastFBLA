@@ -1,0 +1,216 @@
+@import "tailwindcss";
+@source "../src";
+@import "tw-animate-css";
+
+@theme inline {
+  --font-sans: "Manrope", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Manrope", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-border: var(--border);
+  --color-highlight: var(--highlight);
+}
+
+:root {
+  --background: oklch(0.075 0 0);
+  --foreground: oklch(0.94 0 0);
+  --card: oklch(0.105 0 0);
+  --card-foreground: oklch(0.94 0 0);
+  --primary: oklch(0.54 0.17 255);
+  --primary-foreground: oklch(0.98 0 0);
+  --muted: oklch(0.14 0 0);
+  --muted-foreground: oklch(0.65 0 0);
+  --accent: oklch(0.72 0.17 239);
+  --accent-foreground: oklch(0.08 0 0);
+  --border: oklch(1 0 0 / 0.1);
+  --highlight: var(--primary);
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+  html {
+    scroll-behavior: smooth;
+    background: var(--color-background);
+  }
+  body {
+    margin: 0;
+    background: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+  ::selection {
+    background: var(--color-highlight);
+    color: var(--color-primary-foreground);
+  }
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: oklch(0.34 0 0) var(--color-background);
+  }
+  *::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  *::-webkit-scrollbar-track {
+    background: var(--color-background);
+  }
+  *::-webkit-scrollbar-thumb {
+    background: oklch(0.34 0 0);
+    border-radius: 999px;
+  }
+  *::-webkit-scrollbar-thumb:hover {
+    background: oklch(0.44 0 0);
+  }
+  *::-webkit-scrollbar-button {
+    display: none;
+    width: 0;
+    height: 0;
+  }
+  *::-webkit-scrollbar-corner {
+    background: transparent;
+  }
+  a,
+  button,
+  summary {
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+@keyframes loader-out {
+  0%,
+  76% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@keyframes loader-bar {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+@keyframes reveal-up {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes pulse-dot {
+  50% {
+    opacity: 0.35;
+  }
+}
+
+@utility page-shell {
+  width: min(100% - 2rem, 72rem);
+  margin-inline: auto;
+}
+@utility section-pad {
+  padding-block: clamp(5rem, 10vw, 9rem);
+}
+@utility label-text {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  line-height: 1.4;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+@utility title-xl {
+  font-size: clamp(2.8rem, 7.2vw, 6.8rem);
+  line-height: 0.98;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+@utility title-lg {
+  font-size: clamp(2.1rem, 4.2vw, 4.2rem);
+  line-height: 1.04;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+@utility body-lg {
+  font-size: clamp(1.2rem, 2vw, 1.75rem);
+  line-height: 1.38;
+  letter-spacing: 0;
+}
+@utility reveal {
+  animation: reveal-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes overlay-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes panel-in {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes grid-in {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes pie-in {
+  from {
+    stroke-dashoffset: 400;
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@utility no-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  &::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    display: none;
+  }
+}
