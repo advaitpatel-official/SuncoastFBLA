@@ -22,6 +22,7 @@ import states5 from "@/assets/States 26/5.jpg";
 import states8 from "@/assets/States 26/8.jpg";
 import states9 from "@/assets/States 26/9.jpg";
 import states10 from "@/assets/States 26/10.jpg";
+import states11 from "@/assets/States 26/11.JPEG";
 
 import officerAdvait from "@/assets/Officers/Advait.JPEG";
 import officerAlejandro from "@/assets/Officers/Alejandro.JPEG";
@@ -29,6 +30,7 @@ import officerDavid from "@/assets/Officers/David.JPEG";
 import officerDiaz from "@/assets/Officers/Diaz.JPEG";
 import officerGianna from "@/assets/Officers/Gianna.JPEG";
 import officerJuan from "@/assets/Officers/Juan.PNG";
+import officerManil from "@/assets/Officers/Manil.JPEG";
 import officerOmaly from "@/assets/Officers/Omaly.JPEG";
 import officerPranay from "@/assets/Officers/Pranay.JPEG";
 import officerYashvi from "@/assets/Officers/Yashvi.png";
@@ -229,6 +231,14 @@ export const galleryItems: GalleryItem[] = [
     tags: ["Conference"],
     span: "md:col-span-2",
   },
+  {
+    id: "g38",
+    src: states11,
+    title: "States 2026 - 09",
+    description: "Members at the FBLA State Leadership Conference.",
+    tags: ["Conference"],
+    span: "",
+  },
 ];
 
 export const galleryTags = [
@@ -244,7 +254,7 @@ export const galleryTags = [
 export const officers: { role: string; name: string; image: string | null }[] = [
   { role: "Advisor", name: "Ms. Diaz", image: officerDiaz },
   { role: "President", name: "David Peña", image: officerDavid },
-  { role: "Vice President", name: "Manil Chabria", image: null },
+  { role: "Vice President", name: "Manil Chabria", image: officerManil },
   { role: "Director of Service", name: "Pranay Patel", image: officerPranay },
   { role: "Director of Competitions", name: "Juan Beraldi", image: officerJuan },
   { role: "Secretary", name: "Yashvi Rajpurohit", image: officerYashvi },

@@ -11,7 +11,7 @@ import { SiteHeader } from "@/components/site/SiteHeader";
 import { fullFaq } from "@/data/faq";
 import { memberYears, officers } from "@/data/site";
 import achievementOne from "@/assets/Achievements/Jeurel.png";
-import achievementTwo from "@/assets/Club Rush/DSC_0076.JPG";
+import achievementTwo from "@/assets/Achievements/Manil.JPEG";
 import achievementThree from "@/assets/Achievements/Isabella.jpg";
 
 export const Route = createFileRoute("/")({
@@ -434,7 +434,7 @@ function Home() {
             <div className="mt-14 grid gap-px border border-border bg-border grid-cols-2 sm:grid-cols-2 md:grid-cols-5 lg:grid-cols-5">
               {officers.map((officer) => (
                 <article key={officer.role} className="bg-card">
-                  <div className="flex aspect-3/4 items-center justify-center overflow-hidden bg-muted md:aspect-4/5">
+                  <div className="flex aspect-3/4 min-h-0 items-center justify-center overflow-hidden bg-muted md:aspect-4/5">
                     {officer.image ? (
                       <img
                         src={officer.image}
