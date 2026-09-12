@@ -442,7 +442,7 @@ function Home() {
                         loading="lazy"
                         width={320}
                         height={400}
-                        className="h-full w-full object-cover"
+                        className="h-full w-full object-cover grayscale"
                       />
                     ) : (
                       <span className="label-text text-muted-foreground">[PHOTO]</span>
