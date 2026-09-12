@@ -1,4 +1,4 @@
-import { Instagram } from "lucide-react";
+import { Instagram, Github } from "lucide-react";
 
 const nav = [
   ["Upcoming", "#upcoming"],
@@ -30,15 +30,26 @@ export function SiteFooter() {
               <br />
               Suncoast Community High School
             </p>
-            <a
-              href="https://instagram.com/suncoast.fbla"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="Suncoast FBLA on Instagram"
-              className="mt-5 inline-flex h-10 w-10 items-center justify-center rounded-full border border-border transition-colors hover:bg-foreground hover:text-background"
-            >
-              <Instagram size={17} />
-            </a>
+            <div className="mt-5 flex items-center gap-3">
+              <a
+                href="https://instagram.com/suncoast.fbla"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Suncoast FBLA on Instagram"
+                className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-border transition-colors hover:bg-foreground hover:text-background"
+              >
+                <Instagram size={17} />
+              </a>
+              <a
+                href="https://github.com/advaitpatel-official/SuncoastFBLA"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Suncoast FBLA on GitHub"
+                className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-border transition-colors hover:bg-foreground hover:text-background"
+              >
+                <Github size={17} />
+              </a>
+            </div>
           </div>
 
           <div>
