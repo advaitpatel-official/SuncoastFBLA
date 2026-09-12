@@ -10,6 +10,7 @@ const OG_IMAGE = `${SITE_URL}/og-image.jpg`;
 export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()({
   head: () => ({
     meta: [
+      { name: "google-site-verification", content: "PKQFR10H0w-kFcSbQBwtDhh-19j6hIBHLPb78WoEUKE" },
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: "Suncoast FBLA — Build. Compete. Lead." },
