@@ -90,7 +90,7 @@ export function SiteFooter() {
               </li>
               <li>
                 <a
-                  href="https://connect.fbla.org/"
+                  href="https://connect.fbla.org/suncoast-community-high-school/register.php"
                   target="_blank"
                   rel="noreferrer"
                   className="transition-colors hover:text-foreground"

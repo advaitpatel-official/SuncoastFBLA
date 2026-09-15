@@ -245,7 +245,7 @@ function Home() {
                   Official FBLA competitive events <ArrowUpRight size={15} />
                 </a>
                 <a
-                  href="https://connect.fbla.org/"
+                  href="https://connect.fbla.org/suncoast-community-high-school/register.php"
                   target="_blank"
                   rel="noreferrer"
                   className="inline-flex w-fit items-center gap-2 border-b border-primary pb-1 text-sm text-primary"
