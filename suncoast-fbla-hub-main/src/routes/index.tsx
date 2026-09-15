@@ -119,7 +119,7 @@ const reasons = [
 ];
 
 const upcoming = [
-  { type: "Meeting", title: "General Meeting", date: "Sep 16 · 2:45 PM", detail: "Cafeteria" },
+  { type: "Meeting", title: "Membership Dues", date: "Oct 15 · 11:59 PM", detail: "Schoolcash Online" },
   { type: "Form", title: "Membership Form", date: "Sep 5 · 11:59 PM", detail: "Google Classroom" },
   { type: "Form", title: "2680 Form", date: "Sep 5 · 11:59 PM", detail: "Google Classroom" },
 ];
