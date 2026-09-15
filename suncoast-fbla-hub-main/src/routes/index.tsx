@@ -231,7 +231,7 @@ function Home() {
           <div className="page-shell">
             <SectionHead index="02 / Competitions" title="Find your event.">
               <p className="text-base leading-relaxed text-muted-foreground">
-                Start with the official FBLA competitive event list bellow, narrow by what you
+                Start with the official FBLA competitive event list below, narrow by what you
                 enjoy, then confirm the format and rules for the current year by using the FBLA
                 website. You can also find free practice materials here.
               </p>
