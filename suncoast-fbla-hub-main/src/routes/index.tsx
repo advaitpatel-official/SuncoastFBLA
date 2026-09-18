@@ -13,6 +13,7 @@ import { memberYears, officers } from "@/data/site";
 import achievementOne from "@/assets/Achievements/Jeurel.png";
 import achievementTwo from "@/assets/Achievements/Manil.JPEG";
 import achievementThree from "@/assets/Achievements/Isabella.jpg";
+import memberOfTheMonth from "@/assets/Member of the month/image.JPEG";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -370,16 +371,23 @@ function Home() {
             {/* MEMBER OF THE MONTH */}
             <div className="mt-12 grid gap-6 lg:grid-cols-[1fr_1.4fr] lg:items-stretch lg:gap-8">
               <div className="flex flex-col overflow-hidden border border-border bg-card">
-                <div className="flex aspect-3/4 items-center justify-center bg-muted lg:aspect-3/4">
-                  <span className="label-text text-muted-foreground">[PHOTO]</span>
+                <div className="flex aspect-3/4 items-center justify-center overflow-hidden bg-muted lg:aspect-3/4">
+                  <img
+                    src={memberOfTheMonth}
+                    alt="Hatuf Malik — September Member of the Month"
+                    loading="lazy"
+                    width={480}
+                    height={640}
+                    className="h-full w-full object-cover grayscale"
+                  />
                 </div>
               </div>
               <div className="flex flex-col justify-between border border-border bg-card p-4 lg:p-6">
                 <p className="label-text text-primary">September · Member of the Month</p>
                 <div className="mt-4 lg:mt-6">
-                  <h3 className="text-lg font-medium lg:text-xl">Hidden</h3>
+                  <h3 className="text-lg font-medium lg:text-xl">Hatuf Malik</h3>
                   <p className="mt-2 text-sm leading-relaxed text-muted-foreground lg:mt-3">
-                    The officers have not revealed the next member of the month.
+                   Hatuf Malik has been a dedicated member of FBLA for four years, demonstrating consistent commitment to the organization and its competitive events. As Chapter Event Committee Head, he helps lead and coordinate chapter events while working with other members to ensure their success. His dedication to FBLA has also led him to compete at the state level for two consecutive years, gaining valuable experience in competition, collaboration, and leadership. Through his continued involvement, Hatuf has grown from a committed member into a student leader who contributes meaningfully to the chapter.
                   </p>
                 </div>
                 <p className="mt-4 text-sm text-muted-foreground lg:mt-5">
