@@ -1,0 +1,14 @@
+{
+  "name": "suncoast-fbla-website",
+  "private": true,
+  "description": "Suncoast Community High School FBLA chapter website — React + TanStack Start",
+  "scripts": {
+    "dev": "npm run dev --prefix suncoast-fbla-hub-main",
+    "build": "npm run build --prefix suncoast-fbla-hub-main",
+    "build:dev": "npm run build:dev --prefix suncoast-fbla-hub-main",
+    "preview": "npm run preview --prefix suncoast-fbla-hub-main",
+    "lint": "npm run lint --prefix suncoast-fbla-hub-main",
+    "format": "npm run format --prefix suncoast-fbla-hub-main",
+    "postinstall": "npm install --prefix suncoast-fbla-hub-main"
+  }
+}

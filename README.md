@@ -19,6 +19,8 @@ The official website for the Suncoast Community High School FBLA chapter.
 
 ### Installation
 
+The application lives in the `suncoast-fbla-hub-main/` directory. You can run all commands from the repository root (they are proxied to that folder), or `cd` into `suncoast-fbla-hub-main/` and run them there directly.
+
 ```bash
 npm install
 ```
