@@ -383,11 +383,11 @@ function Home() {
                 </div>
               </div>
               <div className="flex flex-col justify-between border border-border bg-card p-4 lg:p-6">
-                <p className="label-text text-primary">October · Member of the Month</p>
+                <p className="label-text text-primary">September · Member of the Month</p>
                 <div className="mt-4 lg:mt-6">
-                  <h3 className="text-lg font-medium lg:text-xl">Vedh Karthik</h3>
+                  <h3 className="text-lg font-medium lg:text-xl">Hatuf Malik</h3>
                   <p className="mt-2 text-sm leading-relaxed text-muted-foreground lg:mt-3">
-                  Our member of the month program recognizes FBLA members who demonstrate outstanding involvement, initiative, and commitment to the chapter. This month, we selected Vedh Karthik for demonstrating responsibility and enthusiasm for FBLA, reflected in part by being the first to submit his dues. We hope to inspire other members to embody these values throughout the year.
+                   Hatuf Malik has been a dedicated member of FBLA for four years, demonstrating consistent commitment to the organization and its competitive events. As Chapter Event Committee Head, he helps lead and coordinate chapter events while working with other members to ensure their success. His dedication to FBLA has also led him to compete at the state level for two consecutive years, gaining valuable experience in competition, collaboration, and leadership. Through his continued involvement, Hatuf has grown from a committed member into a student leader who contributes meaningfully to the chapter.
                   </p>
                 </div>
                 <p className="mt-4 text-sm text-muted-foreground lg:mt-5">
